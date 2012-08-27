@@ -41,23 +41,22 @@ public class WilksActivity extends Activity implements OnClickListener {
 	public void onClick(View v) {
 
 		validate = true;
-		
+
 		m_spinnerSexo = (Spinner) findViewById(R.id.sexos);
 		TextView pesoPessoa = (TextView) findViewById(R.id.txtPesoValue);
 		TextView pesoSupino = (TextView) findViewById(R.id.txtPesoSupino);
+		TextView resultCoeff = (TextView) findViewById(R.id.txtCoeffResult);
 		TextView resultWilks = (TextView) findViewById(R.id.txtWilksResult);
 
 		if (pesoSupino.getText().toString().equals("")) {
 			this.camposObrigatorios("Informe o peso do supino");
 			validate = false;
 		}
-		
+
 		if (pesoPessoa.getText().toString().equals("")) {
 			this.camposObrigatorios("Informe seu peso");
 			validate = false;
 		}
-		
-		
 
 		if (validate) {
 			if (m_spinnerSexo.getSelectedItem().toString().equals("Feminino")) {
@@ -71,7 +70,8 @@ public class WilksActivity extends Activity implements OnClickListener {
 				woman.setSupine(supineWoman);
 
 				Wilks wilksWoman = new Wilks(woman);
-				wilksWoman.showCoeff();
+
+				resultCoeff.setText(wilksWoman.showCoeff().toString());
 
 				resultWilks.setText(wilksWoman.formulaTotalWoman().toString());
 			} else {
@@ -85,7 +85,9 @@ public class WilksActivity extends Activity implements OnClickListener {
 				man.setSupine(supineMan);
 
 				Wilks wilksMan = new Wilks(man);
-				wilksMan.showCoeff();
+
+				resultCoeff.setText(wilksMan.showCoeff().toString());
+				;
 				resultWilks.setText(wilksMan.formulaTotalMan().toString());
 			}
 

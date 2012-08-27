@@ -128,13 +128,13 @@ public class Wilks {
 	}
 
 	public Double formulaTotalWoman() {
-
+		
 		return coeff * woman.getSupine().getLiftAmount();
 
 	}
 
 	public Double formulaTotalMan() {
-
+		
 		return coeff * man.getSupine().getLiftAmount();
 
 	}
