@@ -72,8 +72,8 @@ public class WilksActivity extends Activity implements OnClickListener {
 				Wilks wilksWoman = new Wilks(woman);
 
 				resultCoeff.setText(wilksWoman.showCoeff().toString());
-
 				resultWilks.setText(wilksWoman.formulaTotalWoman().toString());
+				
 			} else {
 
 				Man man = new Man();
@@ -86,8 +86,7 @@ public class WilksActivity extends Activity implements OnClickListener {
 
 				Wilks wilksMan = new Wilks(man);
 
-				resultCoeff.setText(wilksMan.showCoeff().toString());
-				;
+				resultCoeff.setText(wilksMan.showCoeff().toString());				
 				resultWilks.setText(wilksMan.formulaTotalMan().toString());
 			}
 

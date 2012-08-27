@@ -128,13 +128,13 @@ public class Wilks {
 	}
 
 	public Double formulaTotalWoman() {
-		
+
 		return coeff * woman.getSupine().getLiftAmount();
 
 	}
 
 	public Double formulaTotalMan() {
-		
+
 		return coeff * man.getSupine().getLiftAmount();
 
 	}
@@ -152,7 +152,7 @@ public class Wilks {
 
 		Woman woman = new Woman();
 
-		woman.setName("Priscila");
+		woman.setName("Fulana");
 		woman.setWeight(60.0);
 		Supine supineWoman = new Supine(46.0);
 		woman.setSupine(supineWoman);
@@ -176,5 +176,4 @@ public class Wilks {
 		System.out.println("-------------------------------------------");
 
 	}
-
 }
