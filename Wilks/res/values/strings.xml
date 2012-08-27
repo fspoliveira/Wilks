@@ -8,7 +8,7 @@
     <string name="txtSupino">Digite peso do supino:</string>
     <string name="lblSexo">Sexo:</string>
     <string name="btnCalcWilks">Calcula Wilks</string>
-    <string name="lblWilksPoinst">Wilks:</string>
+    <string name="lblWilksPoinst">Pontos Wilks:</string>
     <string name="txtWilksResult">txtWilksResult</string>
 
 </resources>
