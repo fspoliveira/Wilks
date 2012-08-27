@@ -19,6 +19,8 @@
         android:layout_below="@+id/clubes"
         android:layout_marginTop="35dp"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:text="@string/txtPeso" >
 
         <requestFocus />
@@ -41,6 +43,8 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/txtPeso"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:text="@string/txtSupino" />
 
     <EditText
@@ -60,6 +64,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:text="@string/lblSexo" />
 
     <Button
@@ -77,6 +83,8 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:text="@string/lblWilksPoinst" />
 
     <EditText
