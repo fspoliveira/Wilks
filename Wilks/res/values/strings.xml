@@ -5,7 +5,7 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_wilks">Calculadora Wilks</string>
     <string name="txtPeso">Digite seu peso:</string>
-    <string name="txtSupino">Digite peso do Supino:</string>
+    <string name="txtSupino">Digite peso do supino:</string>
     <string name="lblSexo">Sexo:</string>
     <string name="btnCalcWilks">Calcula Wilks</string>
     <string name="lblWilksPoinst">Wilks:</string>
